@@ -13,7 +13,7 @@ import javax.persistence.OneToMany;
 @Entity
 public class Libro {
 	@Id // Indica que es el identificador de las personas
-	@GeneratedValue(strategy = GenerationType.AUTO) // Y que se crea automáticamente
+	//@GeneratedValue(strategy = GenerationType.AUTO) // Y que se crea automáticamente
 	private int id;
 	
 	@Column
@@ -30,6 +30,14 @@ public class Libro {
 	private List<Capitulo> capitulos = new ArrayList<>();
 
 	public Libro() {
-//Requerido
+		//Requerido
 	}
+	
+	public Libro(int id, String nombre, int anio, List<Persona> editores) {
+		this.id = id;
+		this.nombre = nombre;
+		this.anio = anio;
+		this.editores.addAll(editores);
+	}
+
 }

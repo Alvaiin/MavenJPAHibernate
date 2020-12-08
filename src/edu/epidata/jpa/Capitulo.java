@@ -13,7 +13,7 @@ import javax.persistence.ManyToOne;
 @Entity
 public class Capitulo {
 	@Id // Indica que es el identificador de las personas
-	@GeneratedValue(strategy = GenerationType.AUTO) // Y que se crea automáticamente
+	//@GeneratedValue(strategy = GenerationType.AUTO) // Y que se crea automáticamente
 	private int id;
 	
 	@Column
@@ -39,4 +39,13 @@ public class Capitulo {
 	public Capitulo() {
 		//Requerido
 	}
+	public Capitulo(int id, String titulo, int paginas, Persona revisor,List<Persona> autores, Libro libro) {
+		this.id = id;
+		this.titulo = titulo;
+		this.paginas = paginas;
+		this.revisor = revisor;
+		this.autores.addAll(autores);
+		this.libro = libro;
+	}
+
 }

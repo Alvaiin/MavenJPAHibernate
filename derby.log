@@ -1,6 +1,6 @@
 ----------------------------------------------------------------
-Fri Dec 04 14:27:47 ART 2020:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.15.2.0 - (1873585): instance a816c00e-0176-2ecb-a64f-00000cc8a388 
+Sun Dec 06 11:33:49 ART 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.15.2.0 - (1873585): instance a816c00e-0176-3879-1828-00000cbbecb8 
 on database directory C:\Users\Alvain\eclipse-workspace\Editorial\MyDerbyDb with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@c387f44 
 Loaded from file:/C:/Users/Alvain/.m2/repository/org/apache/derby/derby/10.15.2.0/derby-10.15.2.0.jar
 java.vendor=Oracle Corporation

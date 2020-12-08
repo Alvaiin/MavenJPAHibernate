@@ -8,7 +8,7 @@ import javax.persistence.Id;
 @Entity // Indica que se persiste en la BD
 public class Persona {
 	@Id // Indica que es el identificador de las personas
-	@GeneratedValue(strategy = GenerationType.AUTO) // Y que se crea automáticamente
+	//@GeneratedValue(strategy = GenerationType.AUTO) // Y que se crea automáticamente
 	private int id;
 	
 	@Column // Indica que es una columna en la BDs
@@ -29,4 +29,24 @@ public class Persona {
 		this.apellido = apellido;
 		this.mail = mail;
 	}
+	
+	public Persona(int id, String nombre, String apellido, String mail) {
+		this.id = id;
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.mail = mail;
+	}
+	
+	public int getId() {
+		return id;
+	}
+	
+	public String getNombre() {
+		return nombre;
+	}
+	
+	public String getApellido() {
+		return apellido;
+	}
+
 }
